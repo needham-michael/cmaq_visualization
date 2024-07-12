@@ -1,18 +1,16 @@
-# Analysis of CMAQ output
+# Python Visualizations of CMAQ Output
 
-*Created 5/29/2024*
+*Created 7/12/2024*
 
-Jupyter notebooks contained within this directory were developed using `python 3.12.3` using [conda](https://conda.io/projects/conda/en/latest/index.html) to install packages.
+A series of short examples of generating visualizations of output from the US EPA __[Commmunity Multiscale Air Quality Model (CMAQ)](https://github.com/USEPA/CMAQ/tree/main)__ using tools from the python ecosystem. 
 
-## Contents
+## Examples
+All tutorials are included in the __[examples](./examples)__ folder. Prior to running the jupyter notebooks, ensure the python environment is correctly configured by following the steps below under __Setup__.
 
-```
-├── README.md
-├── environment.yml
-├── examples
-    ├── 01_minimal_cmaq_plotting_example_MN_2024-05-23.ipynb
-    ├── 02_hr2day_output_analysis_example_MN_2024-06-04.ipynb
-```
+
+1. __[Minimal CMAQ Plotting Example](./01_minimal_cmaq_plotting_example.ipynb)__:  Generate simple coordinate-aware maps of hourly Ozone and PM2.5 concentrations from a CMAQ simulation on the 36US3 grid.
+
+2. __[Basic Analysis of hr2day output](02_hr2day_output_analysis_example.ipynb)__: Generate maps and timeseries plots of the daily maximum of 8-hour average ozone (MDA8O3) with additional colorbar customizations to highlight the value of 0.070 ppm, which is important for the __[primary 8-hour NAAQS](https://www.epa.gov/criteria-air-pollutants/naaqs-table)__ for ozone. This notebook utilizes output files that were generated using the __[CMAQ hr2day](https://github.com/USEPA/CMAQ/tree/main/POST/hr2day)__ postprocessing tool. 
 
 ## Setup
 ### Preparing the python environment
@@ -31,6 +29,10 @@ Once the environment has been created, Jupyter needs to be configured to execute
 `python3 -m ipykernel install --user --name=cmaq_pyenv --display-name="Python3 (cmaq_pyenv)"`
 
 ### Installing the project package
+
+You can install the source code from this repository into the `cmaq_pyenv` conda environment by running `pip install .` (make sure that the correct conda environment is selected). If you plan to make changes to the source code, change that command to `pip install . -e` so that it is *editible*. You may also want to add the following __[cell magic comamands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)__ to the notebooks: `%load_ext autoreload`, and `%autoreload 2`.
+
+These can just be placed in a cell at the top of the notebook and run once. This will allow you to make changes to the source code and have those changes immediately become available within the Jupyter notebook without the need to restart the kernel.
 
 
 
