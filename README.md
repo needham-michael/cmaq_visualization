@@ -1,5 +1,10 @@
 # Python Visualizations of CMAQ Output
 
+<p align="center">
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+<a href="https://github.com/astral-sh/ruff"><img alt="Code style: black" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json"></a>
+</p>
+
 *Created 7/12/2024*
 
 A series of short examples of generating visualizations of output from the US EPA __[Commmunity Multiscale Air Quality Model (CMAQ)](https://github.com/USEPA/CMAQ/tree/main)__ using tools from the python ecosystem. 
