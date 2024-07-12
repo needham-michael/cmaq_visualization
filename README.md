@@ -13,15 +13,15 @@ A series of short examples of generating visualizations of output from the US EP
 All tutorials are included in the __[examples](./examples)__ folder. Prior to running the jupyter notebooks, ensure the python environment is correctly configured by following the steps below under __Setup__.
 
 
-* __[1) Minimal CMAQ Plotting Example](./01_minimal_cmaq_plotting_example.ipynb)__:  Generate simple coordinate-aware maps of hourly Ozone and PM2.5 concentrations from a CMAQ simulation on the 36US3 grid.
+* __[1) Minimal CMAQ Plotting Example](./examples/01_minimal_cmaq_plotting_example.ipynb)__:  Generate simple coordinate-aware maps of hourly Ozone and PM2.5 concentrations from a CMAQ simulation on the 36US3 grid.
 
-* __[2) Basic Analysis of hr2day output](02_hr2day_output_analysis_example.ipynb)__: Generate maps and timeseries plots of the daily maximum of 8-hour average ozone (MDA8O3) with additional colorbar customizations to highlight the value of 0.070 ppm, which is important for the __[primary 8-hour NAAQS](https://www.epa.gov/criteria-air-pollutants/naaqs-table)__ for ozone. This notebook utilizes output files that were generated using the __[CMAQ hr2day](https://github.com/USEPA/CMAQ/tree/main/POST/hr2day)__ postprocessing tool.
+* __[2) Basic Analysis of hr2day output](./examples/02_hr2day_output_analysis_example.ipynb)__: Generate maps and timeseries plots of the daily maximum of 8-hour average ozone (MDA8O3) with additional colorbar customizations to highlight the value of 0.070 ppm, which is important for the __[primary 8-hour NAAQS](https://www.epa.gov/criteria-air-pollutants/naaqs-table)__ for ozone. This notebook utilizes output files that were generated using the __[CMAQ hr2day](https://github.com/USEPA/CMAQ/tree/main/POST/hr2day)__ postprocessing tool.
 
 ### Auxiliary Examples
 
 Auxiliary examples included for informational purposes but cannot be downloaded and run because they rely on data files which are too large / too numerous to include in the __[tutorial data](./examples/tutorial_data)__ folder.
 
-* __[A1) Concat files](./A1_concat_files.ipynb)__: Auxiliary example showing basic concatenation of files. 
+* __[A1) Concat files](./examples/A1_concat_files.ipynb)__: Auxiliary example showing basic concatenation of files. 
 
 ## Setup
 ### Preparing the python environment
