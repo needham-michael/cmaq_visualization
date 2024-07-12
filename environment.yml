@@ -25,6 +25,7 @@ dependencies:
   - azure-identity-cpp=1.6.0=hf1915f5_1
   - azure-storage-blobs-cpp=12.10.0=h00ab1b0_1
   - azure-storage-common-cpp=12.5.0=h94269e2_4
+  - black=24.4.2=py312h7900ff3_0
   - blosc=1.21.5=hc2324a3_1
   - bokeh=3.4.1=pyhd8ed1ab_0
   - branca=0.7.2=pyhd8ed1ab_0
@@ -33,10 +34,10 @@ dependencies:
   - brotli-python=1.1.0=py312h30efb56_1
   - bzip2=1.0.8=hd590300_5
   - c-ares=1.28.1=hd590300_0
-  - ca-certificates=2024.2.2=hbcca054_0
+  - ca-certificates=2024.7.4=hbcca054_0
   - cairo=1.18.0=h3faef2a_0
   - cartopy=0.23.0=py312h1d6d2e6_1
-  - certifi=2024.2.2=pyhd8ed1ab_0
+  - certifi=2024.7.4=pyhd8ed1ab_0
   - cfitsio=4.4.0=hbdc6101_1
   - cftime=1.6.3=py312h085067d_1
   - charset-normalizer=3.3.2=pyhd8ed1ab_0
@@ -202,6 +203,7 @@ dependencies:
   - mpg123=1.32.6=h59595ed_0
   - msgpack-python=1.0.8=py312h2492b07_0
   - munkres=1.1.4=pyh9f0ad1d_0
+  - mypy_extensions=1.0.0=pyha770c72_0
   - mysql-common=8.3.0=hf1915f5_4
   - mysql-libs=8.3.0=hca2cd23_4
   - ncurses=6.5=h59595ed_0
@@ -212,12 +214,13 @@ dependencies:
   - nss=3.100=hca3bf56_0
   - numpy=1.26.4=py312heda63a1_0
   - openjpeg=2.5.2=h488ebb8_0
-  - openssl=3.3.0=h4ab18f5_3
+  - openssl=3.3.1=h4ab18f5_1
   - orc=2.0.1=h17fec99_0
   - packaging=24.0=pyhd8ed1ab_0
   - pandas=2.2.2=py312h1d6d2e6_1
   - parso=0.8.4=pyhd8ed1ab_0
   - partd=1.4.2=pyhd8ed1ab_0
+  - pathspec=0.12.1=pyhd8ed1ab_0
   - pcre2=10.43=hcad00b1_0
   - pexpect=4.9.0=pyhd8ed1ab_0
   - pickleshare=0.7.5=py_1003
@@ -258,6 +261,7 @@ dependencies:
   - readline=8.2=h8228510_1
   - requests=2.32.2=pyhd8ed1ab_0
   - rtree=1.2.0=py312hb0aae1a_0
+  - ruff=0.5.1=py312hbe4c86d_0
   - s2n=1.4.14=he19d79f_0
   - scikit-learn=1.5.0=py312h1fcc3ea_0
   - scipy=1.13.0=py312hc2bc53b_1
@@ -315,10 +319,13 @@ dependencies:
   - zlib=1.2.13=hd590300_5
   - zstd=1.5.6=ha6fb4c9_0
   - pip:
+      - beautifulsoup4==4.12.3
       - cffi==1.16.0
       - h3==3.7.7
+      - lxml==5.2.2
       - pseudonetcdf==3.4.0
       - pycparser==2.22
+      - soupsieve==2.5
       - timezonefinder==6.5.0
       - tqdm==4.66.4
 prefix: /work/REGIONS/users/mneedham/.miniforge3/envs/cmaq_pyenv
