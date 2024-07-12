@@ -25,7 +25,7 @@ Auxiliary examples included for informational purposes but cannot be downloaded 
 
 ## Setup
 ### Preparing the python environment
-The `environment.yml` file includes instructions for recreating the same conda environment (named `cmaq_pyenv`) used to develop and run these notebooks. Assuming conda has been [installed locally](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) and [initialized](https://conda.io/projects/conda/en/latest/dev-guide/deep-dives/activation.html) for the user's shell, the environment can be recreated by running the following command from within the base directory
+The `environment.yml` file includes instructions for recreating the same conda environment (named `cmaq_pyenv`) used to develop and run these notebooks. Assuming conda has been __[installed locally](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)__ and __[initialized](https://conda.io/projects/conda/en/latest/dev-guide/deep-dives/activation.html)__ for the user's shell, the environment can be recreated by running the following command from within the base directory
 
 `conda env create -f environment.yml`
 
@@ -35,7 +35,7 @@ The environment can then be activated with
 
 ### Adding the ipython kernel to Jupyter
 
-Once the environment has been created, Jupyter needs to be configured to execute the notebooks *using the environment.* This requires using the [ipykernel](https://github.com/ipython/ipykernel) package, which was included in the `environment.yml` file. From the terminal window, run
+Once the environment has been created, Jupyter needs to be configured to execute the notebooks *using the environment.* This requires using the __[ipykernel](https://github.com/ipython/ipykernel)__ package, which was included in the `environment.yml` file. From the terminal window, run
 
 `python3 -m ipykernel install --user --name=cmaq_pyenv --display-name="Python3 (cmaq_pyenv)"`
 
