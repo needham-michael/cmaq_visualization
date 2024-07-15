@@ -323,6 +323,7 @@ dependencies:
       - cffi==1.16.0
       - h3==3.7.7
       - lxml==5.2.2
+      - polars==1.1.0
       - pseudonetcdf==3.4.0
       - pycparser==2.22
       - pyrsig==0.8.4
