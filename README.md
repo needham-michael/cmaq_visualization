@@ -7,6 +7,10 @@
 
 **Last Updated: 12 July 2024**
 
+**Contact: needham.michael@epa.gov**
+
+***
+
 A series of short examples of generating visualizations of output from the US EPA __[Commmunity Multiscale Air Quality Model (CMAQ)](https://github.com/USEPA/CMAQ/tree/main)__ using tools from the python ecosystem. 
 
 ## Examples
@@ -17,12 +21,15 @@ All tutorials are included in the __[examples](./examples)__ folder. Prior to ru
 
 * __[2) Basic Analysis of hr2day output](./examples/02_hr2day_output_analysis_example.ipynb)__: Generate maps and timeseries plots of the daily maximum of 8-hour average ozone (MDA8O3) with additional colorbar customizations to highlight the value of 0.070 ppm, which is important for the __[primary 8-hour NAAQS](https://www.epa.gov/criteria-air-pollutants/naaqs-table)__ for ozone. This notebook utilizes output files that were generated using the __[CMAQ hr2day](https://github.com/USEPA/CMAQ/tree/main/POST/hr2day)__ postprocessing tool.
 
+* __[3) Model-Data Comparison](./03_model_monitor_comparison.ipynb)__: Download AQS in-situ air quality data using the __[pyRSIG](https://barronh.github.io/pyrsig/)__ package and compare to CMAQ output
+
 ### Auxiliary Examples
 
 Auxiliary examples included for informational purposes but cannot be downloaded and run because they rely on data files which are too large / too numerous to include in the __[tutorial data](./examples/tutorial_data)__ folder.
 
 * __[A1) Concat files](./examples/A1_concat_files.ipynb)__: Auxiliary example showing basic concatenation of files.
-* __[A2) Download AQS data](./examples/A2_aqs_download_pyrsig.ipynb)__: Auxiliary example showing how to download AQS data that coincides with CMAQ output using __[pyRSIG](https://github.com/barronh/pyrsig)__. Also includes an example of plotting AQS monitor data on an interactive web map with __[folium](https://python-visualization.github.io/folium/latest/#)__ (requires download).
+
+* __[A2) Download AQS data](./examples/A2_aqs_download_pyrsig.ipynb)__: Auxiliary example showing how to download AQS data that coincides with CMAQ output using __[pyRSIG](https://github.com/barronh/pyrsig)__. Also includes an example of plotting AQS monitor data on an interactive web map with __[folium](https://python-visualization.github.io/folium/latest/#)__.
 
 ## Setup
 ### Preparing the python environment
