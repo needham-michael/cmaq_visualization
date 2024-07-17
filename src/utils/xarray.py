@@ -33,7 +33,7 @@ def display_vars(dset, var_dsec="var_desc"):
     desc = "DESCRIPTION"
 
     print("-" * 80)
-    print(f"| {var:8} | {units:16} | {desc}")
+    print(f"| {var:16} | {units:16} | {desc}")
     print("-" * 80)
 
     ct = 1
@@ -51,7 +51,7 @@ def display_vars(dset, var_dsec="var_desc"):
         except Exception:
             pass
 
-        print(f"| {var:8} | {units:16} | {desc}")
+        print(f"| {var:16} | {units:16} | {desc}")
 
         if ct % 6 == 0:
             print("-" * 80)
