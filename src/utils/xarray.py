@@ -1,7 +1,7 @@
 """Utility functions for working with xarray data types"""
 
 
-def display_vars(dset, var_dsec="var_desc",str_incl=None,str_excl=None):
+def display_vars(dset, var_dsec="var_desc", str_incl=None, str_excl=None):
     """Displays variables, units, and descriptions of an xarray dataset
 
     Generates a printout of each variable within dset that includes the
@@ -20,11 +20,11 @@ def display_vars(dset, var_dsec="var_desc",str_incl=None,str_excl=None):
         which contains a description of the variable.
 
     str_incl : string, default=None
-        String pattern to use for filtering. Only printout variables which 
+        String pattern to use for filtering. Only printout variables which
         include this pattern.
 
     str_excl : string, default=None
-        String pattern to use for filtering. Only printout variables which 
+        String pattern to use for filtering. Only printout variables which
         do not include this pattern.
 
     Returns
@@ -45,7 +45,7 @@ def display_vars(dset, var_dsec="var_desc",str_incl=None,str_excl=None):
 
     if str_excl is not None:
         print(f"Excluding Pattern: {str_excl}")
-        data_vars = [x for x in data_vars if not str_excl in x]
+        data_vars = [x for x in data_vars if str_excl not in x]
 
     var = "VARNAME"
     units = "UNITS"
@@ -56,7 +56,7 @@ def display_vars(dset, var_dsec="var_desc",str_incl=None,str_excl=None):
     print("-" * 80)
 
     ct = 1
-    
+
     for var in data_vars:
         desc = ""
         units = ""
