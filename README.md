@@ -30,6 +30,8 @@ Auxiliary examples included for informational purposes but cannot be downloaded 
 
 * __[A2) Download AQS data](./examples/A2_aqs_download_pyrsig.ipynb)__: Auxiliary example showing how to download AQS data that coincides with CMAQ output using __[pyRSIG](https://github.com/barronh/pyrsig)__. Also includes an example of plotting AQS monitor data on an interactive web map with __[folium](https://python-visualization.github.io/folium/latest/#)__.
 
+* __[A3) Coordinate Transformations and Subsetting](./examples/A3_coordinate_transformation_subsetting.ipynb)__ : Auxiliary example showing how to manage data in different coordinate systems. Makes use of __[cartopy](https://scitools.org.uk/cartopy/docs/latest/)__ for coordinate reference systems, as well as __[geopandas](https://geopandas.org/en/stable/)__ and __[shapely](https://shapely.readthedocs.io/en/stable/manual.html)__ to manage points and polygons across coordinate systems.
+
 ## Setup
 ### Preparing the python environment
 The `environment.yml` file includes instructions for recreating the same conda environment (named `cmaq_pyenv`) used to develop and run these notebooks. Assuming conda has been __[installed locally](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)__ and __[initialized](https://conda.io/projects/conda/en/latest/dev-guide/deep-dives/activation.html)__ for the user's shell, the environment can be recreated by running the following command from within the base directory
