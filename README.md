@@ -20,6 +20,8 @@ A series of short examples of generating visualizations of output from the US EP
 
 * __[3) Model-Data Comparison](./examples/03_model_monitor_comparison.ipynb)__: Download AQS in-situ air quality data using the __[pyRSIG](https://barronh.github.io/pyrsig/)__ package and compare to CMAQ hr2day output as in Example 2.
 
+* __[4) Edits to Emission Files](./examples/04_cmaq_emission_inputs.ipynb)__: Make changes to CMAQ emission files.
+
 ### Auxiliary Examples
 
 Auxiliary examples included for informational purposes but cannot be downloaded and run because they rely on data files which are too large / too numerous to include in the __[tutorial data](./examples/tutorial_data)__ folder.
