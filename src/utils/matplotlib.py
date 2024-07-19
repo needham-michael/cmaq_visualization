@@ -51,15 +51,9 @@ def discrete_colorbar(
 
     Returns
     ----------
-    cmap : LinearSegmentedColormap or ListedColormap
-        Colormap based on `cmap_name` and drawn from the matplotlib colormap
-        registry
-
-    norm : matplotlib.colors.BoundaryNorm
-        Colormap normalization generated from `vmin`, `vmax`, and `dlev`
-
     smap : matplotlib.cm.ScalarMappable
-        Scalar
+        Object used to map data to desired colormap. Can access the underlying
+        colormap with `smap.cmap` and the underlying norm with `smap.norm`
     """
 
     if dlev is None:
@@ -89,4 +83,4 @@ def discrete_colorbar(
         fig.colorbar(smap, cax=ax, orientation="horizontal")
         plt.show()
 
-    return cmap, norm, smap
+    return smap
