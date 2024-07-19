@@ -9,7 +9,7 @@ def discrete_colorbar(
     vmin,
     vmax,
     dlev=None,
-    cmap_name="inferno",
+    cmap="inferno",
     set_bad=None,
     set_over=None,
     set_under=None,
@@ -30,9 +30,12 @@ def discrete_colorbar(
         spacing between color bounds. If None, spacing is chosen to give a
         colorbar with 12 evenly-spaced colors
 
-    cmap_name : str, default = 'inferno'
-        Name pointing to a Matplotlib colormap. For default options, see
+    cmap : str or matplotlib.colors.Colormap, default = 'inferno'
+        If a string, is name pointing to a Matplotlib colormap. For default 
+        options, see
         https://matplotlib.org/stable/users/explain/colors/colormaps.html
+
+        Otherwise, used as an already-created colormap
 
     set_bad : str, default = None
         Fill color to use for NaN values
@@ -61,7 +64,8 @@ def discrete_colorbar(
 
     cmap_boundaries = np.arange(vmin, vmax + dlev / 2, dlev)
 
-    cmap = mpl.colormaps[cmap_name]
+    if isinstance(cmap,str):
+        cmap = mpl.colormaps[cmap]
 
     if set_bad is not None:
         cmap.set_bad(set_bad)
