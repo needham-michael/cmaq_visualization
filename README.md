@@ -12,9 +12,9 @@
 
 A series of short examples of generating visualizations of input and output files from the US EPA __[Commmunity Multiscale Air Quality Model (CMAQ)](https://github.com/USEPA/CMAQ/tree/main)__ using tools from the python ecosystem. All tutorials are included in the __[examples](./examples)__ folder. Prior to running the jupyter notebooks, ensure the python environment is correctly configured by following the steps below under __Setup__.
 
-## User's Guide
+## Examples
 
-Examples can be found in the __[User's Guide](./docs/README.md)__
+Examples can be found in the __[User's Guide](https://needham-michael.github.io/cmaq_visualization/)__
 
 ## Setup
 
