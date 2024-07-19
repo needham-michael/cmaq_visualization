@@ -142,6 +142,10 @@ def get_cmaq_metadata(dset, is_jday=True, return_proj=False):
     proj_lamb : cartopy.crs.LambertConformal
         a cartopy Lambert conformal conic projection with parameters
         set by the input dataset attributes, for use in plotting
+
+    See Also
+    --------
+    drop_cmaq_metadata
     """
 
     # Get coordinate arrays associated with the x-, y-, and time-dimensions
@@ -157,5 +161,44 @@ def get_cmaq_metadata(dset, is_jday=True, return_proj=False):
         proj = get_cmaq_projection(dset)
 
         return dset, proj
+
+    return dset
+
+
+def drop_cmaq_metadata(dset):
+    """Remove metadata and reset to original IOAPI conventions
+
+    Drop all metadata additions made to dataset by get_cmaq_metadata
+
+    Parameters
+    ----------
+    dset : xarray.Dataset
+        result of calling xr.open_dataset() on a file in cmaq format
+
+    Returns
+    -------
+    dset : xarray.Dataset
+        the same input dataset, but coordinate arrays dropped
+
+    See Also
+    --------
+    get_cmaq_metadata
+    """
+
+    # Drop projection-aware x and y coordinates, and datetime-aware time coord
+    dset = dset.drop_vars(["x", "y", "time"])
+
+    # Rename back to IOAPI convention
+    dset = dset.rename_dims(
+        {
+            "time": "TSTEP",
+            "x": "COL",
+            "y": "ROW",
+        }
+    )
+
+    # Ensure there is a length-1 "LAY" dimension
+    if "LAY" not in list(dset.dims):
+        dset = dset.expand_dims(dim="LAY", axis=1)
 
     return dset
