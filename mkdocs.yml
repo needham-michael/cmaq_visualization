@@ -1,0 +1,7 @@
+site_name: CMAQ Visualizations
+nav:
+  - Home: index.md
+  - Getting Started: setup.md
+  - Examples: examples.md
+  - About: about.md
+theme: readthedocs
