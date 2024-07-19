@@ -31,7 +31,7 @@ def discrete_colorbar(
         colorbar with 12 evenly-spaced colors
 
     cmap : str or matplotlib.colors.Colormap, default = 'inferno'
-        If a string, is name pointing to a Matplotlib colormap. For default 
+        If a string, is name pointing to a Matplotlib colormap. For default
         options, see
         https://matplotlib.org/stable/users/explain/colors/colormaps.html
 
@@ -64,7 +64,7 @@ def discrete_colorbar(
 
     cmap_boundaries = np.arange(vmin, vmax + dlev / 2, dlev)
 
-    if isinstance(cmap,str):
+    if isinstance(cmap, str):
         cmap = mpl.colormaps[cmap]
 
     if set_bad is not None:
