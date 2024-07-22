@@ -1,0 +1,26 @@
+site_name: CMAQ Visualizations
+nav:
+  - Home: index.md
+  - Getting Started: setup.md
+  - CMAQ Visualization Examples: examples.md
+  - utils:
+    - cartopy: api-reference/utils/cartopy.md
+    - cmaq: api-reference/utils/cmaq.md
+    - matplotlib: api-reference/utils/matplotlib.md
+    - proj: api-reference/utils/proj.md
+    - xarray: api-reference/utils/xarray.md
+  
+theme:
+  name: "readthedocs"
+
+markdown_extensions:
+  - admonition
+  
+plugins: 
+- search
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          docstring_style: numpy
+          docstring_section_style: table
