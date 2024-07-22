@@ -14,7 +14,9 @@ Examples
 
 * __[4) Edits to Emission Files](https://github.com/needham-michael/cmaq_visualization/blob/main/examples/04_cmaq_emission_inputs.ipynb)__: Demonstrate how to use __[xarray](https://docs.xarray.dev/en/stable/)__ to make changes to NO and NO2 fields from a 12US1 CMAQ emission files.
 
-* __[5) Interactive Visualizations](https://github.com/needham-michael/cmaq_visualization/blob/main/examples/04_cmaq_emission_inputs.ipynb)__: Demonstrate how to generate interactive visualiztions using using __[HoloViews](https://holoviews.org/)__ with the __[Bokeh](https://docs.bokeh.org/en/latest/index.html)__ backend. 
+* __[5) Interactive Visualizations (part 1)](https://github.com/needham-michael/cmaq_visualization/blob/main/examples/05_interactive_minimal.ipynb)__: Demonstrate how to generate interactive visualiztions using using __[HoloViews](https://holoviews.org/)__ with the __[Bokeh](https://docs.bokeh.org/en/latest/index.html)__ backend.
+
+* __[6) Interactive Visualizations (part 2)](https://github.com/needham-michael/cmaq_visualization/blob/main/examples/05_interactive_intermediate.ipynb)__: Show additional interactive features including defining regions of interest, linking maps, and linking maps with timeseries.
 
 Auxiliary Examples
 ------------------
