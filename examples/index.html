@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>CMAQ Visualization Examples - CMAQ Visualizations</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CMAQ Visualization Examples";
+        var mkdocs_page_input_path = "examples.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> CMAQ Visualizations
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../setup/">Getting Started</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">CMAQ Visualization Examples</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#auxiliary-examples">Auxiliary Examples</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">utils</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../api-reference/utils/cartopy/">cartopy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api-reference/utils/cmaq/">cmaq</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api-reference/utils/matplotlib/">matplotlib</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api-reference/utils/proj/">proj</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../api-reference/utils/xarray/">xarray</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">CMAQ Visualizations</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">CMAQ Visualization Examples</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="examples">Examples</h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure you have followed the setup instructions on the <strong><a href="../setup/">Getting Started</a></strong> page before trying to run these examples locally.</p>
+</div>
+<ul>
+<li>
+<p><strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/01_minimal_cmaq_plotting_example.ipynb">1) Minimal CMAQ Plotting Example</a></strong>:  Generate simple coordinate-aware maps of hourly Ozone and PM2.5 concentrations from a CMAQ simulation on the 36US3 grid.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/02_hr2day_output_analysis_example.ipynb">2) Basic Analysis of hr2day output</a></strong>: Generate maps and timeseries plots of the daily maximum of 8-hour average ozone (MDA8O3) with additional colorbar customizations to highlight the value of 0.070 ppm, which is important for the <strong><a href="https://www.epa.gov/criteria-air-pollutants/naaqs-table">primary 8-hour NAAQS</a></strong> for ozone. This notebook utilizes output files that were generated using the <strong><a href="https://github.com/USEPA/CMAQ/tree/main/POST/hr2day">CMAQ hr2day</a></strong> postprocessing tool.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/03_model_monitor_comparison.ipynb">3) Model-Data Comparison</a></strong>: Download AQS in-situ air quality data using the <strong><a href="https://barronh.github.io/pyrsig/">pyRSIG</a></strong> package and compare to CMAQ hr2day output as in Example 2.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/04_cmaq_emission_inputs.ipynb">4) Edits to Emission Files</a></strong>: Demonstrate how to use <strong><a href="https://docs.xarray.dev/en/stable/">xarray</a></strong> to make changes to NO and NO2 fields from a 12US1 CMAQ emission files.</p>
+</li>
+</ul>
+<h2 id="auxiliary-examples">Auxiliary Examples</h2>
+<p>Auxiliary examples either cover adjacent topics, or are included only for informational purposes because they rely on data files which are too large / too numerous to include in the <strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/tutorial_data">tutorial data</a></strong> folder.</p>
+<ul>
+<li>
+<p><strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/A1_concat_files.ipynb">A1) Concat files</a></strong>: Auxiliary example showing basic concatenation of files.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/A2_aqs_download_pyrsig.ipynb">A2) Download AQS data</a></strong>: Auxiliary example showing how to download AQS data that coincides with CMAQ output using <strong><a href="https://github.com/barronh/pyrsig">pyRSIG</a></strong>. Also includes an example of plotting AQS monitor data on an interactive web map with <strong><a href="https://python-visualization.github.io/folium/latest/#">folium</a></strong>.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/needham-michael/cmaq_visualization/blob/main/examples/A3_coordinate_transformation_subsetting.ipynb">A3) Coordinate Transformations and Subsetting</a></strong> : Auxiliary example showing how to manage data in different coordinate systems. Makes use of <strong><a href="https://scitools.org.uk/cartopy/docs/latest/">cartopy</a></strong> for coordinate reference systems, as well as <strong><a href="https://geopandas.org/en/stable/">geopandas</a></strong> and <strong><a href="https://shapely.readthedocs.io/en/stable/manual.html">shapely</a></strong> to manage points and polygons across coordinate systems.</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../setup/" class="btn btn-neutral float-left" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../api-reference/utils/cartopy/" class="btn btn-neutral float-right" title="cartopy">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../setup/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../api-reference/utils/cartopy/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
