@@ -1,3 +1,3 @@
-# Xarray Utilities
+# Projection Utilities
 
 ::: src.utils.proj
