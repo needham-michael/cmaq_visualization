@@ -1,14 +1,16 @@
-Setup
-=====
+Getting Started
+===============
 
 Getting the code
 ----------------
 
-The most up-to-date version of this repository including all tutorial data can be downloaded locally with
+The most up-to-date version of this repository including all tutorial data can be downloaded locally using git. You can "get git" onto your local machine __[directly from the git website](https://git-scm.com/downloads)__, or it can be installed within a conda environment using `conda install -c conda-forge git`. Either way, once git is configured, you can download everything you need to run these examples with
 
 ```shell
 git clone https://github.com/needham-michael/cmaq_visualization.git
 ```
+
+This will create a directory called `/cmaq_visualization` on your local machine.
 
 Preparing the python environment
 --------------------------------
@@ -30,6 +32,11 @@ Once the environment has been created, Jupyter needs to be configured to execute
 
 Installing the project package
 ------------------------------
-You can install the source code from this repository into the `cmaq_pyenv` conda environment by running `pip install .` (make sure that the correct conda environment is selected). If you plan to make changes to the source code, change that command to `pip install . -e` so that it is *editible*. You may also want to add the following __[cell magic comamands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)__ to the notebooks: `%load_ext autoreload`, and `%autoreload 2`.
+You will need to install the python utility functions into the `cmaq_pyenv` conda environment by running `pip install .` from the `/cmaq_visualiztion` folder (make sure that the correct conda environment is selected). 
 
-These can just be placed in a cell at the top of the notebook and run once. This will allow you to make changes to the source code and have those changes immediately become available within the Jupyter notebook without the need to restart the kernel.
+If you plan to make your own changes to those utility functions (or add new ones), change that command to `pip install . -e` so that it is *editible*. 
+
+!!! note
+    If you do make edits to the utility functions (or add your own), you may also want to add the following __[cell magic comamands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)__ to the notebooks: `%load_ext autoreload`, and `%autoreload 2`, which can just be placed in a cell at the top of the notebook and run once. 
+    
+    This will allow you to make changes to the source code and have those changes immediately become available within the Jupyter notebook without the need to restart the kernel.
