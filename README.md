@@ -5,64 +5,34 @@
 <a href="https://github.com/astral-sh/ruff"><img alt="Code style: black" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json"></a>
 </p>
 
-**Last Updated: 19 July 2024**
 
-**Contact: needham.michael@epa.gov**
+A series of short examples of generating visualizations of input and output files from the US EPA __[Commmunity Multiscale Air Quality Model (CMAQ)](https://github.com/USEPA/CMAQ/tree/main)__ using tools from the python ecosystem. These examples are provided for demonstrative purposes only. All tutorials are included in the __[examples](./examples)__ folder. 
+
+Most features of the example notebooks can be seen directly through the GitHub previews (the primary exception is for all interactive visualizations), but if you would like to run the notebooks yourself, see the __[Getting Started](https://needham-michael.github.io/cmaq_visualization/setup/)__ page of the __[User's Guide](https://needham-michael.github.io/cmaq_visualization/)__
+
+
+
+Change Log
+----------
+* __2024.07.19__ Initial Release
+***
+<p align="center">
+  <img src="./docs/_static/header.png" width=800/>
+</p>
+
 ***
 
-A series of short examples of generating visualizations of input and output files from the US EPA __[Commmunity Multiscale Air Quality Model (CMAQ)](https://github.com/USEPA/CMAQ/tree/main)__ using tools from the python ecosystem. All tutorials are included in the __[examples](./examples)__ folder. Prior to running the jupyter notebooks, ensure the python environment is correctly configured by following the steps below under __Setup__.
-
-## Examples
-
-* __[1) Minimal CMAQ Plotting Example](./examples/01_minimal_cmaq_plotting_example.ipynb)__:  Generate simple coordinate-aware maps of hourly Ozone and PM2.5 concentrations from a CMAQ simulation on the 36US3 grid.
-
-* __[2) Basic Analysis of hr2day output](./examples/02_hr2day_output_analysis_example.ipynb)__: Generate maps and timeseries plots of the daily maximum of 8-hour average ozone (MDA8O3) with additional colorbar customizations to highlight the value of 0.070 ppm, which is important for the __[primary 8-hour NAAQS](https://www.epa.gov/criteria-air-pollutants/naaqs-table)__ for ozone. This notebook utilizes output files that were generated using the __[CMAQ hr2day](https://github.com/USEPA/CMAQ/tree/main/POST/hr2day)__ postprocessing tool.
-
-* __[3) Model-Data Comparison](./examples/03_model_monitor_comparison.ipynb)__: Download AQS in-situ air quality data using the __[pyRSIG](https://barronh.github.io/pyrsig/)__ package and compare to CMAQ hr2day output as in Example 2.
-
-* __[4) Edits to Emission Files](./examples/04_cmaq_emission_inputs.ipynb)__: Demonstrate how to use __[xarray](https://docs.xarray.dev/en/stable/)__ to make changes to NO and NO2 fields from a 12US1 CMAQ emission files.
-
-### Auxiliary Examples
-
-Auxiliary examples included for informational purposes but cannot be downloaded and run because they rely on data files which are too large / too numerous to include in the __[tutorial data](./examples/tutorial_data)__ folder.
-
-* __[A1) Concat files](./examples/A1_concat_files.ipynb)__: Auxiliary example showing basic concatenation of files.
-
-* __[A2) Download AQS data](./examples/A2_aqs_download_pyrsig.ipynb)__: Auxiliary example showing how to download AQS data that coincides with CMAQ output using __[pyRSIG](https://github.com/barronh/pyrsig)__. Also includes an example of plotting AQS monitor data on an interactive web map with __[folium](https://python-visualization.github.io/folium/latest/#)__.
-
-* __[A3) Coordinate Transformations and Subsetting](./examples/A3_coordinate_transformation_subsetting.ipynb)__ : Auxiliary example showing how to manage data in different coordinate systems. Makes use of __[cartopy](https://scitools.org.uk/cartopy/docs/latest/)__ for coordinate reference systems, as well as __[geopandas](https://geopandas.org/en/stable/)__ and __[shapely](https://shapely.readthedocs.io/en/stable/manual.html)__ to manage points and polygons across coordinate systems.
-## Setup
-
-### Getting the code
-
-The most up-to-date version of this repository including all tutorial data can be downloaded locally with
-
-```shell
-git clone https://github.com/needham-michael/cmaq_visualization.git
-```
-
-### Preparing the python environment
-The `environment.yml` file includes instructions for recreating the same conda environment (named `cmaq_pyenv`) used to develop and run these notebooks. Assuming conda has been __[installed locally](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)__ and __[initialized](https://conda.io/projects/conda/en/latest/dev-guide/deep-dives/activation.html)__ for the user's shell, the environment can be recreated by running the following command from within the base directory
-
-`conda env create -f environment.yml`
-
-The environment can then be activated with
-
-`conda activate cmaq_pyenv`
-
-### Adding the ipython kernel to Jupyter
-
-Once the environment has been created, Jupyter needs to be configured to execute the notebooks *using the environment.* This requires using the __[ipykernel](https://github.com/ipython/ipykernel)__ package, which was included in the `environment.yml` file. From the terminal window, run
-
-`python3 -m ipykernel install --user --name=cmaq_pyenv --display-name="Python3 (cmaq_pyenv)"`
-
-### Installing the project package
-
-You can install the source code from this repository into the `cmaq_pyenv` conda environment by running `pip install .` (make sure that the correct conda environment is selected). If you plan to make changes to the source code, change that command to `pip install . -e` so that it is *editible*. You may also want to add the following __[cell magic comamands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)__ to the notebooks: `%load_ext autoreload`, and `%autoreload 2`.
-
-These can just be placed in a cell at the top of the notebook and run once. This will allow you to make changes to the source code and have those changes immediately become available within the Jupyter notebook without the need to restart the kernel.
 
 
 
+Issues and Requests
+-------------------
 
+If you have any problems, or would like to request a new example, you can __[open an issue on GitHub](https://github.com/needham-michael/cmaq_visualization/issues)__, or contact Michael Needham (__[needham.michael@epa.gov](mailto:needham.michael@epa.gov)__)
 
+License
+-------
+
+Copyright 2024, Michael Needham
+
+Licensed under the __[MIT License](./LICENSE)__
