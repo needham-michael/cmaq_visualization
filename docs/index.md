@@ -1,6 +1,8 @@
 CMAQ Python Visualizations
 ==========================
 
+![A Static Map Made From CMAQ Output](./_static/header.png)
+
 Homepage for __[Python Visualizations and Analysis of CMAQ Data](https://github.com/needham-michael/cmaq_visualization/tree/main)__, a series of short examples of generating visualizations of input and output files from the US EPA __[Commmunity Multiscale Air Quality Model (CMAQ)](https://github.com/USEPA/CMAQ/tree/main)__ using tools from the python ecosystem. These examples are provided for demonstrative purposes only.
 
 Most features of the example notebooks can be seen directly through the GitHub previews (the primary exception is for all interactive visualizations), but if you would like to run the notebooks yourself, see __[Getting Started](./setup.md)__ for installation and setup instructions. Links and descriptions for each notebook are included on the __[Examples](./examples.md)__ page.
